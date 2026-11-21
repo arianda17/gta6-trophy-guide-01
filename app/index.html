@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vice Trophy Guide — GTA VI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Vice Trophy Guide</h1>
+  <p class="sub">Grand Theft Auto VI · PlayStation 5 · 55 trophies</p>
+</header>
+
+<main>
+  <section id="roadmap" aria-labelledby="roadmap-title">
+    <h2 id="roadmap-title">Roadmap to the Platinum</h2>
+    <ol class="roadmap">
+      <li><strong>Story first.</strong> Play through the campaign. The chapter and mission trophies pop automatically and cannot be missed.</li>
+      <li><strong>The one missable.</strong> <a href="#t-28" class="missable-flag">Trophy #28 Positive Mental Attitude</a> — the Chapter 1 meditation at Jason's house disappears after Chapter 1 and it is still unconfirmed whether it is required. Do it early, right after Down to Earth, before it is gone.</li>
+      <li><strong>Free roam.</strong> With both characters unlocked (after Coffee Break), work the collectibles, activities and encounters: WAiNK scans, vehicles, stunts, card sets, garages, challenges, gangs, bank vaults, races.</li>
+      <li><strong>The grind.</strong> The 100% completion gold, stunts, challenges, laundered money, spent money and 500 criminal-profile actions are the long tail. The platinum is earned in one playthrough; nothing is online-only.</li>
+    </ol>
+    <p class="roadmap-note">This roadmap is built from the official trophy list's names, descriptions and PSN targets. Guide text says plainly where a method is not pinned down.</p>
+  </section>
+
+  <section id="progress-bar" aria-labelledby="progress-title">
+    <h2 id="progress-title">Your Progress</h2>
+    <div class="progress-wrap">
+      <div class="progress-track"><div id="progress-fill"></div></div>
+      <div class="progress-meta">
+        <span id="progress-pct">0%</span>
+        <span id="progress-count">0 of 55 earned</span>
+      </div>
+    </div>
+    <div class="grade-counts" id="grade-counts"></div>
+  </section>
+
+  <section id="controls" aria-labelledby="controls-title">
+    <h2 id="controls-title" class="sr-only">Filters</h2>
+    <div class="controls">
+      <label>Grade <select id="grade"><option value="all">All grades</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
+      <label>Type <select id="type"><option value="all">All types</option></select></label>
+      <label class="search"><input id="search" type="search" placeholder="Search trophies..." autocomplete="off"></label>
+      <label class="spoiler"><input id="spoiler" type="checkbox"> Hide story spoilers until earned</label>
+      <button id="export" type="button">Export progress</button>
+      <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
+    </div>
+  </section>
+
+  <section id="list" aria-labelledby="list-title">
+    <h2 id="list-title" class="sr-only">Trophy list</h2>
+    <ul id="rows" class="trophy-list"></ul>
+    <p id="empty" class="empty">No trophies match these filters.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Sources: the official PlayStation 5 list on <a href="https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/" target="_blank" rel="noopener">Exophase</a> (names, descriptions, grades, rarity), PSNProfiles progress targets, and the entrant's own guide text, which cites its sources per trophy. No Rockstar artwork is used. This app works offline from its own files.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
